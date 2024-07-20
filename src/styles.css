@@ -1,0 +1,70 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addHeight {
+  height: 50px;
+  width: 50px;
+}
+.cardTaskContainer {
+  margin-top: 20px;
+}
+
+.cardTask {
+  margin: 20px 0;
+  padding: 20px;
+  width: 600px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .cardTask-firstRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cardTask-title {
+    width: 100%;
+
+    .title-width {
+      display: flex;
+      word-break: break-all;
+      white-space: normal;
+    }
+  }
+  .cardTask-firstRow.addBorder {
+    border-bottom: 2px solid rgb(240 240 240);
+  }
+  .cardTask-desciption {
+    margin: 20px 0;
+    display: flex;
+  }
+  .cardTask-icons {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .editIcon:hover {
+    font-size: 100px;
+  }
+
+  .cardTask-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+.removeDisplay {
+  display: block;
+}
+.disableComplete {
+  background-color: #b3e6bb; /* Optional: change background to indicate disabled state */
+}
